@@ -39,8 +39,6 @@ df_agg_diff = df_agg.copy()
 metric_date_12mo = df_agg_diff['Video publish time'].max() - pd.DateOffset(months=12)
 median_agg = df_agg_diff[df_agg_diff['Video publish time'] >= metric_date_12mo].median()
 
-# metric_data_12mo = df_agg_diff['Video publish time' - pd.DateOffset(months=12)]
-# metric_medians12mo = df_agg_metrics[df_agg_metrics['Video publish time'] >= metric_date_12mo].median()
 
 # Building dashboard
 
